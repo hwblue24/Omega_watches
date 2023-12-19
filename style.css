@@ -1,17 +1,29 @@
 body {
     display:flex;
-    height:100vh;
+    min-height:100vh;
+    max-width:100%;
     flex-direction: column;
     justify-content: space-evenly;
+    margin:0;
+    padding:0;
     
 }
 
 .header {
     display:flex;
     flex-direction:column;
-    flex:1;
+    color:white;
+    background-color:#1F2937;
+    flex-wrap:wrap;
+    align-content:space-evenly; 
+    gap:30px;
+   
 }
 
+.head-logo {
+    font-size:24px;
+    color:#F9FAF8;
+}
 .top-header {
     display:flex; 
     justify-content:space-between;
@@ -19,14 +31,43 @@ body {
 
 .right-links {
     display:flex;
-    justify-content: space-between;
     list-style: none;
+    gap:10px;
 }   
+a {
+    font-size:18px;
+    color:#E5E7EB;
+    text-decoration: none;
+}
 
 .hero {
     display:flex;
-    justify-content: space-around;
+    color:white;
+    background-color:#1F2937;
+    gap:100px;
+}
 
+.Sign-up {
+    width:fit-content;
+    background-color: #3882F6;
+    color:#F9FAF8;
+    font-size:15px;
+    border-radius:12px;
+    padding:10px;
+    padding-left:12px; 
+    padding-right:12px;
+    font-weight:bold;
+}
+
+.img.header {
+    margin:10px;
+    padding:10px;
+    
+}
+.hero-main {
+    font-size: 48px;
+    font-weight:bolder;
+    color: #F9FAF8;
 }
 
 .hero-secondary {
@@ -34,6 +75,15 @@ body {
     flex-direction: column;
 }
 
+
+.hero-second-text { 
+    font-size:18px;
+    color:#E5E7EB;
+}
+
+.hero-text {
+    width:400px; 
+}
 .content {
     display:flex;
     flex-direction: column;
@@ -41,7 +91,10 @@ body {
 }
 
 .content-title {
-    flex:1;
+    font-size: 36px;
+    font-weight:bolder;
+    color:1F2937;
+    margin:20px;
 }
 
 .feature-watches {
@@ -61,15 +114,69 @@ body {
     display:flex;
     flex-direction:column;
     align-items:center;
+    background-color: #E5E7EB;
+    min-height:25vh;
 }
 
 .quote-bound {
-    width:500px;
+    width:900px;
     display:flex;
     flex-direction: column;
+    font-size:36px;
+    font-style: italic;
 }
 
 .quote-name {
     align-self:flex-end;
 }
 
+.contact { 
+    display:flex; 
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.contact-box { 
+    display:flex;
+    justify-content: space-around;
+    background-color: #3882F6;
+    padding:20px;
+    border:20px;
+    border-radius: 12px;
+    color:#E5E7EB;
+    width:600px;
+}
+
+.contact-signup {
+    color:#E5E7EB;
+    border-radius: 12px;
+    background-color: #3882F6;
+    border:5px solid #E5E7EB;
+    font-weight: bold;
+
+}
+
+.footer {
+    display:flex;
+    justify-content:center;
+    background-color:#1F2937;
+}
+
+h5 {
+    color:white;
+}
+
+.watch {
+    border:5px solid #3882F6;
+    border-radius:12px;
+}
+
+.text {
+    text-align:center;
+    
+}
+
+.contact-text1 {
+    font-weight:bolder;
+}
